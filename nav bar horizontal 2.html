@@ -1,87 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UT-F8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style>
-            body{
-                font-size: 20px;
-            }
-            body {
-      background-color:white;
+<head>
+    <meta charset="UT-F8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-size: 20px;
     }
     ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #38444d;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        border: 4px dotted white;
     }
-    
     li {
-      float: left;
+        float: left;
     }
-    
-    li a, .dropbtn {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
+    li a, .dropdown{
+        text-decoration: none;
+        color: white;
+        padding: 16px 32px;
+        display: inline-block;
     }
-    
-    li a:hover, .dropdown:hover .dropbtn {
-      background-color: red;
+    li .dropdown {
+        display: inline-block;
     }
-    
-    li.dropdown {
-      display: inline-block;
-    }
-    
     .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        z-index: 1;
+        border: 3px dotted white;
     }
-    
     .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .dropdown-content a:hover {background-color: #f1f1f1;}
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-   
-            
-        </style>
-    </head>
+        color: white;
+        padding: 16px 32px;
+        display: block;
+        text-align: left;
 
-    <body>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li class="dropdown">
-              <a href="hello" class="dropbtn">Dropdown</a>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </li>
-          </ul>
-           
-          <div>
-            <h2>Responsive Sidenav Example</h2>
+    }
+    .dropdown-content a:hover {
+        background-color: black;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#">line 1</a>
+                <a href="#">line 2</a>
+                <a href="#">line 3</a>
+            </div>
+        </li>
+    </ul>
+
+        <h2>Responsive Sidenav Example</h2>
             <p>This example use media queries to transform the sidenav to a top navigation bar when the screen size is 900px or less.</p>
             <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
             <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
