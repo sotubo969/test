@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UT-F8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            [type="text"], select {
+                width: 93%;
+                margin: 8px;
+                padding: 12px;
+                font-size: 15px;
+                border-radius: 5px;
+                border: 4px dotted black;
+                cursor: pointer;
+            }
+            placeholder {
+                color: aqua;
+            }
+            [type="submit"] {
+                background-color: black;
+                font-size: 15px;
+                color: white;
+                width: 100%;
+                padding: 12px 8px;
+            }
+            [type="submit"]:hover {
+                background-color: white;
+                color: black;
+            }
+            div {
+                background-color: burlywood;
+                padding: 17px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <h3>Using CSS to style an HTML Form</h3>
+        <div>
+            <form>
+                <label for="fname" style="font-size: larger;">FirstName</label>
+                <input type="text" id="fname" placeholder="FirstName..">
+
+                <label for="lname" style="font-size: larger;">LastName</label>
+                <input type="text" id="lname" placeholder="LastName">
+
+                <label for="country" style="font-size: larger;">Country</label><br>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="america">America</option>
+                    <option value="nigeria">Nigeria</option>
+                </select><br>
+
+                <label for="Subject" style="font-size: larger;">Subject</label><br>
+                <textarea id="Subject" placeholder="Write something here..."  style="width: 100%; min-height: 300px; font-size: larger;"></textarea>
+
+                <input type="submit" value="Submit">
+                
+            </form>
+
+        </div> 
+
+
+    </body>
+</html>
