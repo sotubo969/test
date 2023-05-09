@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UT-F8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                counter-reset: number;
+            }
+            h2::before {
+                counter-increment: number;
+                content:"Number " counter(number) ":";
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>CSS Counter 1</h1>
+        <div>
+            <h2> HTML</h2>
+            <h2> CSS</h2>
+            <h2> JavaScript</h2>
+            <h2> Python</h2>
+            
+        </div>
+    </body>
+</html>
