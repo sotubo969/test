@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UT-F8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+              margin: 0;
+            }
+            .header {
+              padding: 20px;
+              background-color: #210070;
+              color: white;
+              font-size: xx-large;
+              text-align: center;
+            }
+            .topnav {
+              overflow: hidden;
+              background-color: #f4b41a;
+            }
+            .topnav a {
+              float: left;
+              display: block;
+              color: #143d59;
+              text-decoration: none;
+              padding: 16px 32px;
+              text-align: center;
+              font-size: x-large;
+            }
+            .column {
+              float: left;
+              padding: 10px;
+            }
+            .column.side {
+              width: 25%;
+              background-color: black;
+              color: orange;
+              height: 300px;
+            }
+            .column.middle {
+              width: 50%;
+            }
+            @media screen and ( max-width:600px) {
+              .column.side, .column.middle {
+                width:100%;
+              }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Header</h1>
+            <p>Resize the browser window to see the responsive effect.</p>
+          </div>
+          
+          <div class="topnav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+          </div>
+          
+          <div class="row">
+            <div class="column side">
+              <h2>Side</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+            </div>
+            
+            <div class="column middle">
+              <h2>Main Content</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+            
+            <div class="column side">
+              <h2>Side</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+            </div>
+          </div>
